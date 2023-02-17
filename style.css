@@ -56,3 +56,25 @@ header {
   width: 400px;
 }
 
+.chat{
+  background-color: rgb(224, 189, 146);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.chat h2, div, ul {
+  margin: 10px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(224, 189, 146);
+  margin-top: 20px;
+  padding: 0px 25px;
+  font-size: 26px;
+  text-shadow: -1px 1px 20px rgb(4, 0, 255) ;
+}
