@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
   </head>
   <body>
     <header>
@@ -13,17 +14,22 @@
     </header>
     <main>
       <section class="about_races">
+        <h2 class="h2_container">О расаха в D&D</h2>
         <figure>
           <img class="races_images" src="../img/dwarf.jpg" alt="dwarf_img">
-          <figcaption class="figcaption_text">Дварфы</figcaption>
+          <figcaption class="figcaption_text"><h2>Дварфы</h2></figcaption>
         </figure>
         <figure>
           <img class="races_images" src="/img/tifling.png" alt="tifling_img">
-          <figcaption class="figcaption_text">Тифлинги</figcaption>
+          <figcaption class="figcaption_text"><h2>Тифлинги</h2></figcaption>
         </figure>
         <figure>
-          <img class="races_images" src="../img/dragonborn.jpg" alt="dragonborn_img">
-          <figcaption class="figcaption_text">Дракониды</figcaption>
+          <img
+            class="races_images"
+            src="../img/dragonborn.jpg"
+            alt="dragonborn_img"
+          />
+          <figcaption class="figcaption_text"><h2>Дракониды</h2></figcaption>
         </figure>
         <div class="about_races_text">
           <p>
@@ -110,22 +116,42 @@
           </p>
         </div>
       </section>
-      <div class="chat">
+      <div class="chat_box">
         <h2>Чат</h2>
         <div>
-            <input type="text">
-            <button>Отправить</button>
-         </div>
-        <ul>
-            <li>Привет</li>
-            <li>Как дела</li>
-            <li>Пока</li>
-        </ul>
+          <input id="message" type="text" placeholder="введите сообщение">
+          <button onclick="send()">Отправить</button>
+        </div>
+        <div id="chat"></div>
       </div>
+      <script>
+        get();
+        setInterval(get, 2000);
+        // function send() {
+        //   //прочитать сообщение из id=message
+              //вывести в консоль
+              //очистить поле ввода
+        // }
+
+         function send() {
+          var testmessage = document.getElementById("message");
+          console.log(testmessage.value);
+          document.getElementById("message").value = "";
+        }
+
+        function get() {
+          (async () => {
+            var response = await fetch("http://127.0.0.1:5500/chat.txt");
+            var answer = await response.text();
+            document.getElementById("chat").innerText = answer;
+          }
+          )();
+        }
+      </script>
     </main>
     <footer>
-        <p>©️2022</p>
-        <p>Яковлев Юрий</p>
+      <p>©️2022</p>
+      <p>Яковлев Юрий</p>
     </footer>
   </body>
 </html>

@@ -22,12 +22,21 @@ header {
   margin: 0px 150px;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   justify-items: center;
   align-items: start;
   text-align: center;
   gap: 20px;
   box-sizing: border-box;
+}
+
+.h2_container{
+  grid-column: span 3;
+  border: solid black 2px;
+  background-color: rgb(224, 189, 146);
+  width: 92.5%;
+  font-size: 30px;
+  padding: 5px;
 }
 
 .races_images {
@@ -37,7 +46,7 @@ header {
 }
 
 .figcaption_text {
-  font-size: 30px;
+  font-size: 22px;
   background-color: rgb(224, 189, 146);
   border: solid black;
 }
@@ -56,7 +65,7 @@ header {
   width: 400px;
 }
 
-.chat{
+.chat_box {
   background-color: rgb(224, 189, 146);
   display: flex;
   justify-content: center;
@@ -65,7 +74,7 @@ header {
   margin: 10px;
 }
 
-.chat h2, div, ul {
+.chat_box h2, div, ul {
   margin: 10px;
 }
 
