@@ -1,0 +1,206 @@
+@media (max-width: 400px) {
+  .header__top_part {
+    padding: 20px;
+  }
+
+  .header__firm_logo {
+    margin: 0px;
+  }
+  nav {
+    display: none;
+  }
+  .sign__up-button {
+    display: none;
+  }
+
+  .top_part__basic_idea {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 29px;
+    padding-left: calc(50% - (335px / 2));
+    padding-right: calc(50% - (335px / 2));
+  }
+
+  .basic_idea__img::before {
+    display: none;
+    padding-left: calc(50% - (335px / 2));
+    padding-right: calc(50% - (335px / 2));
+  }
+
+  .basic_idea__img {
+    width: 335px;
+    margin: 0px 0px 26px;
+  }
+  .basic_idea__title {
+    text-align: left;
+    font-size: 31px;
+    line-height: 37px;
+  }
+
+  .basic_idea__text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 27px;
+    height: 80px;
+    outline: none;
+    overflow: hidden;
+    margin-bottom: 26px;
+  }
+
+  .btn {
+    padding: 0px;
+    width: 335px;
+  }
+
+  .wrapper {
+    padding-left: calc(50% - (335px / 2));
+    padding-right: calc(50% - (335px / 2));
+  }
+
+  .features__top {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .features {
+    padding-bottom: 71px;
+  }
+
+  .features__grid {
+    grid-template-rows: 3fr;
+    grid-template-columns: 335px;
+    text-align: left;
+  }
+
+  .features__grid div {
+    display: flex;
+    gap: 28px;
+  }
+
+  .features__grid div div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .features__column-title {
+    margin: 0px;
+  }
+
+  .program_abilities__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program_abilities_block {
+    width: auto;
+  }
+
+  .program_abilities__row + .program_abilities__row {
+    margin-top: 60px;
+  }
+
+  .program_abilities__row:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .program_abilities_block-text > p {
+    margin-bottom: 30px;
+  }
+
+  .prices {
+    height: 986px;
+  }
+
+  .phone_wrapper{
+    padding: 0px;
+  }
+  .prices__top {
+    text-align: left;
+    padding: 272px 20px 0px;
+  }
+
+  .prices__top > p {
+    width: auto;
+    margin: 0 auto 42px;
+}
+
+  .prices__card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 280px;
+    background-color: white;
+  }
+
+  .card__content {
+    padding: 35px 35px 47px;
+  }
+
+  .card__title{
+    width: 210px;
+  }
+
+  .phone_btn{
+    width: 210px;
+  }
+
+  .clients__column--mini-size{
+    display: none;
+  }
+
+  /* .clients__column{
+    width: auto;
+  } */
+
+  .clients__column-inner{
+    margin: 0px;
+  }
+
+  .form__auth-btn {
+    width: 335px;
+  }
+
+  .clients__column-inner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 32px 20px;
+    width: auto;
+    background-color: #fff;
+    box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+    border-radius: 8px;
+  }
+
+  .footer__row {
+    padding: 36px 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 77px;
+  }
+
+  .footer__social-list{
+    display: flex;
+  }
+
+  .footer__social-link{
+    padding: 0px;
+    margin: 0px;
+  }
+
+}
+
